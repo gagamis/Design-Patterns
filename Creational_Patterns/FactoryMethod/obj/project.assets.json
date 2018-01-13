@@ -2279,11 +2279,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/ExternalHDD/Documents/Visual Studio Mac/Repos/Creational_Patterns/AbstractFactory/AbstractFactory.csproj",
-      "projectName": "AbstractFactory",
-      "projectPath": "/Volumes/ExternalHDD/Documents/Visual Studio Mac/Repos/Creational_Patterns/AbstractFactory/AbstractFactory.csproj",
+      "projectUniqueName": "/Volumes/ExternalHDD/Documents/Visual Studio Mac/Repos/Creational_Patterns/FactoryMethod/FactoryMethod.csproj",
+      "projectName": "FactoryMethod",
+      "projectPath": "/Volumes/ExternalHDD/Documents/Visual Studio Mac/Repos/Creational_Patterns/FactoryMethod/FactoryMethod.csproj",
       "packagesPath": "/Users/gamis/.nuget/packages/",
-      "outputPath": "/Volumes/ExternalHDD/Documents/Visual Studio Mac/Repos/Creational_Patterns/AbstractFactory/obj",
+      "outputPath": "/Volumes/ExternalHDD/Documents/Visual Studio Mac/Repos/Creational_Patterns/FactoryMethod/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
