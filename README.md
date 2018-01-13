@@ -25,4 +25,7 @@ Ha egy feladat újra előkerül a fejlesztés folyamán, akkor valószínűleg a
     - gyártófüggvény a nevében magadott terméket adja vissza
     - az elkészítés algoritmusát egységbe tudjuk zárni.
     
-    Előnye ha a gyártás folyamata változik, akkor azt csak egy helyen kell módosítani.
+  Előnye ha a gyártás folyamata változik, akkor azt csak egy helyen kell módosítani.
+  A létrehozás algoritmusát egységbe tudjuk zárni. 
+  Továbbá emelhetjük a termék absztrakciós szintjét, vagy elrejthetünk olyan információkat a kliens elől, amelyekre csak az objektum létrehozása miatt lenne szüksége. 
+  Így, ha a gyártás folyamata változik, csak egy helyen szükséges módosítani a kódot. 
