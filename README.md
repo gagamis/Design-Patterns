@@ -20,6 +20,9 @@ Ha egy feladat újra előkerül a fejlesztés folyamán, akkor valószínűleg a
 #1. Létrehozási (creational patterns) minták
   sok new kulcsszóval ránk szakadó függőségeket megszüntetése
   
+  1. Gyártófüggvény (Factory method)
+  Ezt a tervezési mintát akkor használjuk, rendelkezünk egy szülőosztállyal, amelynek több leszármazottja van, és a bemeneten múlik, hogy mely gyermekosztályra van szükségünk. A minta egy gyártó metódusra teszi az objektumok létrehozásának felelősségét.
+  
   2. Elvont gyár (Abstract factory)
   Az elvont gyár minta hasonló a gyártófüggvényhez, azonban magasabb absztrakciós szintet képvisel. A gyártók gyárának is szokták nevezni. Ebben a mintában nem if–else vagy catch blokkokkal határozzuk meg, hogy mely termékalosztályt példányosítjuk, hanem minden termékalosztályhoz tartozik egy gyár osztály, amely segítségével az absztrakt gyár elkészíti az objektumot. Absztrakt gyár alkalmazásával elrejthetjük a platformfüggő osztályokat a kliens elől.
   
