@@ -1,3 +1,4 @@
+# Builder - Építő
 Az építő (builder pattern) programtervezési minta egy létrehozási (creational pattern) minta.  Ahelyett hogy nagyszámú konstruktort alkalmazna, az Építő minta egy másik objektumot, az építőt alkalmazza, mely minden egyes inicializációs paramétert lépésről lépésre kap meg, majd egyben adja vissza az elkészült objektumot.
 
 Megoldást ad a gyár mintákkal kapcsolatos problémákra. A gyár minták nehezen boldogulnak a sok attribútummal rendelkező objektumokkal.
