@@ -19,6 +19,11 @@ namespace Builder
             ReportBuilder excelBuilder = new ExcelBuilder();
             Report excelReport = director.GenerateReport(excelBuilder);  // Generate the Excel report
 
+            // Create PDF report by fluent builder
+            FluentDirector fluentDirector = new FluentDirector();
+            FluentReportBuilder pdfFluentBuilder = new PDFFluentBuilder();
+            Report pdfFluentReport = fluentDirector.GenerateReport(pdfFluentBuilder);
+
             // print PDF 
             Console.WriteLine("--- PDF report ---");
             Console.WriteLine($"Type: {pdfReport.ReportType}");
@@ -32,6 +37,13 @@ namespace Builder
             Console.WriteLine($"Header: {excelReport.Header}");
             Console.WriteLine($"Content: {excelReport.Content}");
             Console.WriteLine($"Footer: {excelReport.Footer}");
+
+            // print fluent PDF
+            Console.WriteLine("--- Fluent PDF report ---");
+            Console.WriteLine($"Type: {pdfFluentReport.ReportType}");
+            Console.WriteLine($"Header: {pdfFluentReport.Header}");
+            Console.WriteLine($"Content: {pdfFluentReport.Content}");
+            Console.WriteLine($"Footer: {pdfFluentReport.Footer}");
 
             Console.ReadLine();
         }
@@ -139,6 +151,63 @@ namespace Builder
 
             // return the created report
             return builder.DispatchReport();
+        }
+    }
+
+    // Fluent API
+    abstract class FluentReportBuilder
+    {
+        protected Report _report;
+
+        public FluentReportBuilder CreateReport()
+        {
+            _report = new Report();
+            return this;
+        }
+
+        public abstract FluentReportBuilder SetReportType();
+        public abstract FluentReportBuilder SetHeader();
+        public abstract FluentReportBuilder SetFooter();
+        public abstract FluentReportBuilder SetContent();
+        public Report DispatchReport() => _report;
+    }
+    class FluentDirector
+    {
+        public Report GenerateReport(FluentReportBuilder builder)
+        {
+            return builder
+                    .CreateReport()
+                    .SetReportType()
+                    .SetHeader()
+                    .SetFooter()
+                    .SetContent()
+                    .DispatchReport();
+        }
+    }
+    class PDFFluentBuilder : FluentReportBuilder
+    {
+        public override FluentReportBuilder SetContent()
+        {
+            _report.Content = "PDF Fluent Content";
+            return this;
+        }
+
+        public override FluentReportBuilder SetFooter()
+        {
+            _report.Footer = "PDF Fluent Footer";
+            return this;
+        }
+
+        public override FluentReportBuilder SetHeader()
+        {
+            _report.Header = "PDF Fluent Header";
+            return this;
+        }
+
+        public override FluentReportBuilder SetReportType()
+        {
+            _report.ReportType = "PDF Fluent";
+            return this;
         }
     }
 }

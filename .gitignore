@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/Creational_Patterns/Builder/bin/Debug/netcoreapp2.2
+/Creational_Patterns/Builder/obj
+/Creational_Patterns/.vs/Creational_Patterns/v16
