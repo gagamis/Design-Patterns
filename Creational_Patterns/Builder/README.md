@@ -9,4 +9,4 @@ A Builder osztály egy absztrakt felületet határoz meg, amely egy objektumot �
 A Director hozza létre az összetett objektumokat.
 A Product a konstruálandó objektum típusa.
 
-https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Builder_UML_class_diagram.svg/1280px-Builder_UML_class_diagram.svg.png
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Builder_UML_class_diagram.svg/1280px-Builder_UML_class_diagram.svg.png)
