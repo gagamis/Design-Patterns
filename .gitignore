@@ -6,3 +6,9 @@
 /Creational_Patterns/Builder/bin/Debug/netcoreapp2.2
 /Creational_Patterns/Builder/obj
 /Creational_Patterns/.vs/Creational_Patterns/v16
+/Creational_Patterns/.vs/Creational_Patterns/DesignTimeBuild
+/Creational_Patterns/AbstractFactory/obj/Release/netcoreapp2.0
+/Creational_Patterns/AbstractFactory/obj/AbstractFactory.csproj.nuget.dgspec.json
+/Behavioral_patterns/.vs/Behavioral_patterns/v16
+/Behavioral_patterns/State/bin/Debug/netcoreapp2.2
+/Behavioral_patterns/State/obj
